@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Map<String, BigDecimal> currenciesWithRates = Parser.parseXMLtoHashMap();
+        Map<String, BigDecimal> currenciesWithRates = Parser.parseXMLtoHashMap(Parser.uri);
         CurrencyCalculator calculator = new CurrencyCalculator(currenciesWithRates);
         calculator.mainMenu();
     }

@@ -16,14 +16,20 @@ import java.util.Map;
 
 public class Parser {
 
-    static Map<String, BigDecimal> parseXMLtoHashMap() {
+    static String uri = "eurofxref-daily.xml";
+
+    public String getUri() {
+        return uri;
+    }
+
+    static Map<String, BigDecimal> parseXMLtoHashMap(String dataFileURI) {
 
         Map<String, BigDecimal> currencyRatesMap = new HashMap<>();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document doc = builder.parse("eurofxref-daily.xml");
+            Document doc = builder.parse(dataFileURI);
             NodeList currencyList = doc.getElementsByTagName("Cube");
             for (int i = 0; i < currencyList.getLength(); i++) {
                 Node c = currencyList.item(i);
@@ -36,7 +42,7 @@ public class Parser {
             }
             return currencyRatesMap;
         } catch (ParserConfigurationException | SAXException | IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return null;
     }

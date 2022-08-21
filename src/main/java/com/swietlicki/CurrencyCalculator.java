@@ -32,7 +32,6 @@ public class CurrencyCalculator {
                     printAvailableCurrency();
                     break;
                 case 0:
-                    sc.close();
                     flag = false;
                     break;
                 default:
@@ -40,6 +39,7 @@ public class CurrencyCalculator {
                     break;
             }
         }
+        sc.close();
     }
 
     public BigDecimal calculateCurrency(BigDecimal amount, String currencyNameCode) {

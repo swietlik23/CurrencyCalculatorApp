@@ -2,7 +2,6 @@ package com.swietlicki;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -93,7 +92,6 @@ class CurrencyCalculatorTest {
         assertEquals("-> Type the 3-letter abbreviation of the destination currency (e.g. PLN): ",
                 outputStreamCaptor.toString());
         assertEquals(userInput, result);
-
     }
 
     @Test
@@ -109,7 +107,6 @@ class CurrencyCalculatorTest {
                         + "Incorrect currency code. See the list of available currencies in the main menu.\r\n",
                 outputStreamCaptor.toString());
         assertNull(result);
-
     }
 
     @Test
@@ -139,7 +136,6 @@ class CurrencyCalculatorTest {
                         "The amount must be grater than zero!\r\n",
                 outputStreamCaptor.toString());
         assertNull(result);
-
     }
 
     @Test

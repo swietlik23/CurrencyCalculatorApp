@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swietlicki.ParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-21T21:15:20" hostname="DESKTOP-KUREPV4" time="0.04">
+  <properties/>
+  <testcase name="shouldReturnNotEmptyHashMap()" classname="com.swietlicki.ParserTest" time="0.036"/>
+  <testcase name="shouldReturnEmptyHashMap()" classname="com.swietlicki.ParserTest" time="0.002"/>
+  <testcase name="shouldReturnNullWhenDataFileNotExist()" classname="com.swietlicki.ParserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
