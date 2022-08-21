@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swietlicki.CurrencyCalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-08-21T17:30:11" hostname="DESKTOP-KUREPV4" time="0.035">
+  <properties/>
+  <testcase name="constructorTestWhenNoData()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.02"/>
+  <testcase name="shouldNotGetCurrencyAbbreviation()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.004"/>
+  <testcase name="shouldCalculateCurrency()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.001"/>
+  <testcase name="shouldNotGetEuroAmountFromUserWhenNegative()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.001"/>
+  <testcase name="shouldGetCurrencyAbbreviation()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.001"/>
+  <testcase name="shouldThrowWhenGettingEuroAmountFromUser()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.001"/>
+  <testcase name="shouldGetEuroAmountFromUser()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.001"/>
+  <testcase name="shouldReturnNullAsResult()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.0"/>
+  <testcase name="shouldPrintAvailableCurrency()" classname="com.swietlicki.CurrencyCalculatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
